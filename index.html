@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crack €uromillion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    #combinations-container {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 10px;
+      height: 300px;
+      overflow-y: scroll;
+    }
+    button {
+      margin: 10px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    #pagination-controls {
+      margin-top: 20px;
+    }
+
+  #summary {
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 16px;
+  }
+  #summary p {
+    margin: 5px 0;
+  }
+
+  </style>
+</head>
+<body>
+    <h1>Crack €uromillion</h1>
+  <h2>6-Digit Combination Generator</h2>
+  <p>5 numbers between 1-50, and 1 number between 1-9.</p>
+  
+  <div id="pagination-controls">
+    <button id="prev-btn" disabled>Previous</button>
+    <button id="next-btn" disabled>Next</button>
+  </div>
+  
+  <div id="combinations-container">
+    <p>Click "Next" to start generating combinations...</p>
+  </div>
+
+  <div id="summary">
+    <p>Total Combinaisons Trouvées : <span id="total-combinations">0</span></p>
+    <p>Coût Total : <span id="total-cost">0,00€</span></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
